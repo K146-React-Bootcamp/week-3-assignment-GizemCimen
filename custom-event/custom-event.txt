@@ -1,0 +1,19 @@
+Browserlar ile kullanılan event vardır. Bu eventler'den bazıları Click, input, change vb.
+Bunların dışında kendi event'inimizi CustomEvent() ile yaratabiliriz.
+
+Yeni bir Event kullanarak bir tane oluşturmak için aşağıdaki adımlar izlenir .
+
+Event yapıcısını kullanarak bir olay oluşturuyoruz.
+Bu olayı addEventListener() yöntemini kullanarak dinliyoruz.
+Element.dispatchEvent(eventName) yöntemini kullanarak olayı tetikler veya göndeririz .
+start adlı özel bir event oluşturuldu.
+
+const startEvent = new Event("start"); // Olay atamak için 
+
+
+document.addEventListener("start", () => { 
+    console.log("Başlangıç ​​olayı tetiklendi") 
+}); // Olay Dinleyicisini tetiklemek için 
+
+
+document.dispatchEvent(startEvent); // Olayı tetiklemek için 
